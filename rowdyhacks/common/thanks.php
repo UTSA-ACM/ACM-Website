@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>
-            Sponsor
+            Thank You
         </title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <style type="text/css">
@@ -137,69 +137,12 @@
         </script>
     </head>
     <body> 
-        <div id="content">
+        <div style="margin-top:32%;text-align:center;">
             <h2>
-                Sponsor RowdyHacks
+                Thank you for Sponsoring RowdyHacks!
             </h2>
             <br />
-            <div id="sponsors-container">
-                <div class="sponsor-card">
-                    <h2>
-                        Bronze Sponsor
-                    </h2>
-                    <div class="sponsor-banner bronze">
-                    </div>
-                    <h3 id="bronze-dollar">
-                        $750
-                    </h3>
-                    <div style="padding: 20px 0px;height: 30px;">
-                        <!--
-                        <input type="checkbox" id="sending-sponsors" name="sending-sponsors" style="" />
-                        We will send mentors
-                        -->
-                    </div>
-                    <a href="sponsor-bronze.php" id="bronze-link">
-                        <input type="button" value="Sponsor" id="bronze-sponsor-button" class="bronze" />
-                    </a>
-                </div>
-                <div class="sponsor-card">
-                    <h2>
-                        Silver Sponsor
-                    </h2>
-                    <div class="sponsor-banner silver">
-                    </div>
-                    <h3 id="silver-dollar">
-                        $1500
-                    </h3>
-                    <div style="padding: 20px 0px;height: 30px;">
-                        <input type="checkbox" id="sending-sponsors-silver" name="sending-sponsors" style="" />
-                        We will send mentors
-                    </div>
-                    <a href="sponsor-silver.php" id="silver-link">
-                        <input type="button" value="Sponsor" id="silver-sponsor-button" class="silver" />
-                    </a>
-                </div>
-                <div class="sponsor-card">
-                    <h2>
-                        Gold Sponsor
-                    </h2>
-                    <div class="sponsor-banner gold">
-                    </div>
-                    <h3 id="gold-dollar">
-                        $3000
-                    </h3>
-                    <div style="padding: 20px 0px;height: 30px;">
-                        <input type="checkbox" id="sending-sponsors-gold" name="sending-sponsors" style="" />
-                        We will send mentors
-                    </div>
-                    <a href="sponsor-gold.php" id="gold-link">
-                        <input type="button" value="Sponsor" id="gold-sponsor-button" class="gold" />
-                    </a>
-                </div>
-            </div>
-            <div>
-                
-            </div>
+            <a href="mailto:team@rowdyhacks.org">team@rowdyhacks.org</a>
         </div>
     </body>
 </html>
