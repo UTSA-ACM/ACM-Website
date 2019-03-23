@@ -90,51 +90,6 @@
                 }
             }
         </style>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                window.bringingMentors = false;
-                $("#sending-sponsors-silver").on("click", function(){
-                    if(window.bringingMentors){
-                        window.bringingMentors = false;
-                        $("#sending-sponsors-silver").prop("checked", false);
-                        $("#sending-sponsors-gold").prop("checked", false);
-                        $("#silver-dollar").html("$1500");
-                        $("#gold-dollar").html("$3000");
-                        $("#silver-link").attr("href", "sponsor-silver.php");
-                        $("#gold-link").attr("href", "sponsor-gold.php");
-                    }
-                    else{
-                        window.bringingMentors = true;
-                        $("#sending-sponsors-silver").prop("checked", true);
-                        $("#sending-sponsors-gold").prop("checked", true);
-                        $("#silver-dollar").html("$1000");
-                        $("#gold-dollar").html("$2500");
-                        $("#silver-link").attr("href", "silver-discount.php");
-                        $("#gold-link").attr("href", "gold-discount.php");
-                    }
-                });
-                $("#sending-sponsors-gold").on("click", function(){
-                    if(window.bringingMentors){
-                        window.bringingMentors = false;
-                        $("#sending-sponsors-silver").prop("checked", false);
-                        $("#sending-sponsors-gold").prop("checked", false);
-                        $("#silver-dollar").html("$1500");
-                        $("#gold-dollar").html("$3000");
-                        $("#silver-link").attr("href", "sponsor-silver.php");
-                        $("#gold-link").attr("href", "sponsor-gold.php");
-                    }
-                    else{
-                        window.bringingMentors = true;
-                        $("#sending-sponsors-silver").prop("checked", true);
-                        $("#sending-sponsors-gold").prop("checked", true);
-                        $("#silver-dollar").html("$1000");
-                        $("#gold-dollar").html("$2500");
-                        $("#silver-link").attr("href", "silver-discount.php");
-                        $("#gold-link").attr("href", "gold-discount.php");
-                    }
-                });
-            });
-        </script>
     </head>
     <body> 
         <div id="content">
@@ -142,9 +97,6 @@
                 Sponsor RowdyHacks
             </h2>
             <br />
-            <div style="max-width:75%;display:inline-block;padding:14px;">
-                There is a 3% convenience fee for online payments. The convenience fee only applies to card payments and does not apply to other payment methods.
-            </div>
             <div id="sponsors-container">
                 <div class="sponsor-card">
                     <h2>
@@ -153,14 +105,8 @@
                     <div class="sponsor-banner bronze">
                     </div>
                     <h3 id="bronze-dollar">
-                        $750
+                        $1000
                     </h3>
-                    <div style="padding: 20px 0px;height: 30px;">
-                        <!--
-                        <input type="checkbox" id="sending-sponsors" name="sending-sponsors" style="" />
-                        We will send mentors
-                        -->
-                    </div>
                     <a href="sponsor-bronze.php" id="bronze-link">
                         <input type="button" value="Sponsor" id="bronze-sponsor-button" class="bronze" />
                     </a>
@@ -172,12 +118,8 @@
                     <div class="sponsor-banner silver">
                     </div>
                     <h3 id="silver-dollar">
-                        $1500
+                        $3000
                     </h3>
-                    <div style="padding: 20px 0px;height: 30px;">
-                        <input type="checkbox" id="sending-sponsors-silver" name="sending-sponsors" style="" />
-                        We will send mentors
-                    </div>
                     <a href="sponsor-silver.php" id="silver-link">
                         <input type="button" value="Sponsor" id="silver-sponsor-button" class="silver" />
                     </a>
@@ -189,12 +131,8 @@
                     <div class="sponsor-banner gold">
                     </div>
                     <h3 id="gold-dollar">
-                        $3000
+                        $5000
                     </h3>
-                    <div style="padding: 20px 0px;height: 30px;">
-                        <input type="checkbox" id="sending-sponsors-gold" name="sending-sponsors" style="" />
-                        We will send mentors
-                    </div>
                     <a href="sponsor-gold.php" id="gold-link">
                         <input type="button" value="Sponsor" id="gold-sponsor-button" class="gold" />
                     </a>
@@ -214,7 +152,7 @@
 						<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
 							data-key="<?php echo $stripe['publishable_key']; ?>"
 							data-description="Bronze Sponsor"
-							data-amount="77250"
+							data-amount="100000"
 							data-locale="auto"
 							data-label="Pay with Card or Bitcoin"
 							data-currency="usd"
