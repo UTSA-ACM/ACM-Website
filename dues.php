@@ -48,7 +48,7 @@
                                 <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                                     data-key="<?php echo $stripe['publishable_key']; ?>"
                                     data-description="Dues for <?php echo($current_semester); ?>"
-                                    data-amount="1500"
+                                    data-amount="2000"
                                     data-locale="auto"
                                     data-label="Pay with Card or Bitcoin"
                                     data-currency="usd"
